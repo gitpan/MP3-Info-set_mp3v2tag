@@ -1,0 +1,23 @@
+
+    I  was looking for a comfortable way to read and write ID3 tags
+    in PERL and found the MP3::Info package at CPAN which does quite
+    a good job.
+
+    Unfortunately it lacked support for writing ID3V2 tags.
+
+    So I looked again at CPAN and found the MP3::Tag package which 
+    supports it, but has a somewhat lower-level interface than MP3::Info.
+    My application was halfway written and already used 
+    MP3::Info::set_mp3tag calls, so I wrote a little wrapper which 
+    provides the set_mp3v2tag routine quite similar to 
+    MP3::Info::set_mp3_tag.
+
+    It expects the filename as argument 1 and a hash-reference as
+    argument 2.
+
+    I am not really an expert in MP3-tags, and this little wrapper
+    completely relys on MP3::Tag and my - may be not so perfect - 
+    understanding of it. Still I hope there are no disastrous bugs 
+    in this software.
+
+                                    Benno Kardel (perlfan@justmail.de)

@@ -1,0 +1,8 @@
+Makefile.PL
+MANIFEST
+README
+ref1.mp3
+ref2.mp3
+set_mp3v2tag.pm
+silence.mp3
+test.pl
